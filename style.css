@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  
+}
+
+.nav {
+    background-image: linear-gradient(to left bottom, #82a3d2, #5baac7, #55adad, #70ab8e, #92a575);
+    height: 70px;
+    width: 100%;
+    position: relative;
+    position: sticky;
+    
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 27px;
+    color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3PX;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+
+}
+
+.nav>.nav-links>a {
+    font-size: 24px;
+    margin-right: 20px;
+    margin-top: 0px;
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: hsl(0, 17%, 9%);
+}
+
+.nav>.nav-links>a:hover {
+    color: rgba(162, 33, 33, 0.3);
+}
+
+.nav>#nav-check {
+    display:none;
+}
+
+.sec1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, #4f82ca, #798ec6, #959bc1, #aaaabd, #bababa);
+
+}
+
+.card1 {
+    width: 400px;
+    height: 550px;
+    background-color: rgb(127, 177, 162);
+    position: relative;
+    top: 80px;
+    left: 350px;
+    box-shadow: 10px 10px 5px 0px rgba(39, 36, 36, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(58, 53, 53, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(56, 53, 53, 0.75);
+}
+
+.img1 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 80px;
+    background-color: #668add;
+}
+
+.content h2 {
+    position: relative;
+    top: 80px;
+    left: 95px;
+    letter-spacing: 3PX;
+}
+
+.content h3 {
+    position: relative;
+    top: 60px;
+    left: 95px;
+    letter-spacing: 3PX;
+}
+
+.content SPAN {
+    display: block;
+    width: 125px;
+    height: 10px;
+    border-top: 2px solid #b24949;
+    position: relative;
+    top: 80px;
+    left: 145px;
+    letter-spacing: 3PX;
+}
+
+.txt {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-top: -500px;
+    left: 800px;
+}
+
+.txt h1 {
+    height: fit-content;
+    width: fit-content;
+    font-size: 70px;
+    margin-right: 200px;
+    letter-spacing: 2px;
+}
+
+.txt p {
+    font-size: 25px;
+    position: absolute;
+    top: 140px;
+}
+
+.txt b {
+    font-size: 25px;
+    position: absolute;
+    top: 250px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+@media (max-width:600px) {
+    
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        /* background-image: linear-gradient(to left bottom, #82a3d2, #5baac7, #55adad, #70ab8e, #92a575); */
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: black;
+        height: 0px;
+        transition: all 0.9s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+}
+/* 
+@media (min-height: 680px),
+screen and (orientation: portrait) {
+    .c1 img {
+        width: auto;
+        min-width: auto;
+
+    }
+
+} */
+
+@media only screen and (max-width:400px) {
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .sec1 {
+        width: 100%;
+        height: 150vh;
+        background-image: linear-gradient(to left bottom, #4f82ca, #798ec6, #959bc1, #aaaabd, #bababa);
+
+    }
+
+    .card1 {
+        width: 250px;
+        height: 400px;
+        background-color: rgb(127, 177, 162);
+        position: relative;
+        top: 300px;
+        left: 60px;
+        box-shadow: 10px 10px 5px 0px rgba(39, 36, 36, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(58, 53, 53, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(56, 53, 53, 0.75);
+    }
+
+    .img1 img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background-color: #668add;
+    }
+
+    .content h2 {
+        position: relative;
+        top: 50px;
+        left: 35px;
+        font-size: 20px;
+    }
+
+    .content h3 {
+        position: relative;
+        top: 45px;
+        left: 35px;
+        font-size: 15px;
+    }
+
+    .content SPAN {
+        display: block;
+        width: 125px;
+        height: 10px;
+        border-top: 2px solid #b24949;
+        position: relative;
+        top: 60px;
+        left: 65px;
+        letter-spacing: 3PX;
+    }
+
+    .txt {
+        display: flex;
+        width: 300px;
+        height: 400px;
+        margin-top: 400px;
+        left: 50px;
+    }
+
+    .txt h1 {
+
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    .txt p {
+        font-size: 20px;
+        top: 70px;
+    }
+
+    .txt b {
+        font-size: 20px;
+        top: 170px;
+        font-weight: 500;
+
+    }
+    .nav {
+        height: 70px;
+        width: 100%;
+     
+    }
+
+  
+    
+}
