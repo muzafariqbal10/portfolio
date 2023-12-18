@@ -5,6 +5,8 @@
 body {
     margin: 0px;
     font-family: 'segoe ui';
+    background-image: linear-gradient(to left bottom, #4f82ca, #798ec6, #959bc1, #aaaabd, #bababa);
+
   
 }
 
