@@ -5,13 +5,13 @@
 body {
     margin: 0px;
     font-family: 'segoe ui';
-    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    background-color: #efdecd	;
 
 }
 
 .nav {
-    background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );    height: 70px;
     width: 100%;
+    background: #c3b091	;
    
 
 }
@@ -163,7 +163,7 @@ body {
     background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
 }
 footer {
-    background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );    height: 70px;
+    background: #6e6857	;
     text-align: center;
     height: 150px;
     padding: 10px;
